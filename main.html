@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es-419">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidad de FinanzApp: información sobre datos financieros, cuenta, FinBot IA, anuncios, almacenamiento y eliminación de datos.">
+  <meta name="theme-color" content="#101a16">
+  <title>Política de Privacidad | FinanzApp</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18231e;
+      --muted: #5c6c64;
+      --green: #126b4b;
+      --green-dark: #0d4b36;
+      --green-soft: #e9f5ee;
+      --paper: #ffffff;
+      --canvas: #f3f7f4;
+      --line: #dce7df;
+      --warning: #fff8e8;
+      --warning-line: #f0d48c;
+      --shadow: 0 18px 55px rgba(22, 48, 35, .09);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: var(--green-dark); }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 68px 24px 82px;
+      color: #fff;
+      background: radial-gradient(ellipse at 85% 5%, rgba(122, 217, 161, .2), transparent 32%),
+                  linear-gradient(135deg, #10251b, #126b4b 68%, #20845d);
+    }
+    .hero-inner, main, footer {
+      width: min(920px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 34px;
+      font-weight: 750;
+      letter-spacing: .02em;
+    }
+    .brand-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.34);
+      border-radius: 14px;
+      background: rgba(255,255,255,.12);
+      font-size: 22px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #a7e5bf;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 700px;
+      margin: 0;
+      font-size: clamp(2.35rem, 7vw, 4.3rem);
+      letter-spacing: -.055em;
+      line-height: 1.06;
+    }
+    .hero p:last-child {
+      max-width: 660px;
+      margin: 20px 0 0;
+      color: rgba(255,255,255,.82);
+      font-size: 1.08rem;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 28px;
+    }
+    .pill {
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      color: #effff4;
+      font-size: .85rem;
+    }
+    main {
+      position: relative;
+      margin-top: -28px;
+      padding-bottom: 56px;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+    .toc, article {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .toc {
+      position: sticky;
+      top: 18px;
+      padding: 20px;
+    }
+    .toc h2 {
+      margin: 0 0 12px;
+      font-size: .83rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .toc a {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      font-size: .88rem;
+      text-decoration: none;
+    }
+    .toc a:hover { color: var(--green); }
+    article { padding: clamp(24px, 5vw, 48px); }
+    section { scroll-margin-top: 24px; }
+    section + section {
+      margin-top: 38px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.3rem, 3vw, 1.65rem);
+      letter-spacing: -.025em;
+      line-height: 1.25;
+    }
+    h3 { margin: 23px 0 8px; font-size: 1.04rem; }
+    p { margin: 10px 0; }
+    ul { margin: 9px 0 0; padding-left: 22px; }
+    li { margin: 7px 0; }
+    .lead { color: var(--muted); font-size: 1.04rem; }
+    .callout {
+      margin: 20px 0;
+      padding: 17px 18px;
+      border: 1px solid var(--warning-line);
+      border-radius: 14px;
+      background: var(--warning);
+    }
+    .callout strong { color: #674b0a; }
+    .contact-card {
+      margin-top: 18px;
+      padding: 20px;
+      border-radius: 16px;
+      background: var(--green-soft);
+    }
+    .contact-card p { margin: 4px 0; }
+    .contact-card a { font-weight: 750; }
+    .small { color: var(--muted); font-size: .91rem; }
+    footer {
+      padding: 0 0 38px;
+      color: var(--muted);
+      font-size: .88rem;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      .hero { padding: 48px 20px 66px; }
+      .hero-inner, main, footer { width: min(100% - 28px, 650px); }
+      .layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+      .toc nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 12px;
+      }
+      article { padding: 25px 21px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">₣</span>
+        <span>FinanzApp</span>
+      </div>
+      <p class="eyebrow">Transparencia y control</p>
+      <h1>Política de Privacidad</h1>
+      <p>Esta política explica qué información utiliza FinanzApp, para qué la utiliza, con quién puede compartirla y cómo puedes pedir que se elimine.</p>
+      <div class="hero-meta">
+        <span class="pill">Vigente desde el 27 de octubre de 2026</span>
+        <span class="pill">Aplicación: FinanzApp</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="layout">
+      <aside class="toc" aria-label="Contenido de la política">
+        <h2>En esta página</h2>
+        <nav>
+          <a href="#responsable">Responsable</a>
+          <a href="#datos">Datos utilizados</a>
+          <a href="#uso">Cómo los usamos</a>
+          <a href="#terceros">Servicios externos</a>
+          <a href="#seguridad">Seguridad</a>
+          <a href="#retencion">Conservación</a>
+          <a href="#eliminacion">Eliminar datos</a>
+          <a href="#derechos">Tus derechos</a>
+          <a href="#menores">Menores</a>
+          <a href="#cambios">Cambios y contacto</a>
+        </nav>
+      </aside>
+
+      <article>
+        <section id="responsable">
+          <h2>1. Responsable del tratamiento</h2>
+          <p class="lead">FinanzApp es una aplicación de finanzas personales desarrollada y administrada por Alejandro Andrés Sánchez Carrillo, en Colombia.</p>
+          <p>Para consultas de privacidad, solicitudes de acceso o eliminación y preguntas sobre esta política, escribe a <a href="mailto:FinanzApp027@gmail.com">FinanzApp027@gmail.com</a>.</p>
+        </section>
+
+        <section id="datos">
+          <h2>2. Datos que FinanzApp utiliza</h2>
+          <p>La información depende de las funciones que decidas usar. Puedes usar algunas funciones sin iniciar sesión; la sincronización con tu cuenta requiere iniciar sesión.</p>
+          <ul>
+            <li><strong>Información financiera que ingresas:</strong> gastos, ingresos, presupuestos, ahorros, inversiones, fuentes de financiación, operaciones recurrentes, metas y estadísticas relacionadas. Estos datos pueden incluir descripciones, categorías, fechas y montos.</li>
+            <li><strong>Información de cuenta:</strong> identificador de usuario, correo electrónico, nombre y, si está disponible, foto de perfil recibidos del proveedor de inicio de sesión que elijas (Google o Facebook).</li>
+            <li><strong>Imagen de perfil:</strong> si agregas una foto, la aplicación puede guardarla en el dispositivo y subirla a Firebase Storage para sincronizarla con tu cuenta.</li>
+            <li><strong>Mensajes para FinBot:</strong> cuando usas el asistente, se envían a Google Gemini tu pregunta y el contexto financiero que FinanzApp prepara para responderla. No incluyas contraseñas, números de tarjetas, claves bancarias ni información confidencial.</li>
+            <li><strong>Preferencias y funcionamiento:</strong> idioma, moneda, preferencias de notificaciones, estado de funciones y datos técnicos necesarios para ejecutar la aplicación. Android y los proveedores de SDK pueden procesar identificadores técnicos, versión de la app, información general del dispositivo y registros de funcionamiento según sus propias políticas.</li>
+            <li><strong>Publicidad:</strong> si se muestran anuncios, el SDK de Google Mobile Ads puede procesar información del dispositivo, identificadores publicitarios e interacciones con anuncios, de acuerdo con la configuración y las políticas de Google.</li>
+            <li><strong>Compras:</strong> Google Play procesa los pagos y la información de compra de las suscripciones. FinanzApp recibe información necesaria para conocer el producto y el estado de la compra; FinanzApp no recibe ni almacena los datos completos de tu tarjeta de pago.</li>
+          </ul>
+          <p>Los registros que ingresas se guardan localmente en el dispositivo. Si inicias sesión, FinanzApp puede sincronizar los datos de la cuenta con Firebase para permitir su recuperación y uso en tus dispositivos.</p>
+        </section>
+
+        <section id="uso">
+          <h2>3. Para qué usamos los datos</h2>
+          <ul>
+            <li>Mostrar tus balances, movimientos, presupuestos, metas y estadísticas financieras.</li>
+            <li>Sincronizar tu información entre dispositivos cuando inicias sesión y mantener tu perfil.</li>
+            <li>Generar respuestas y recomendaciones solicitadas en FinBot.</li>
+            <li>Programar recordatorios y alertas que configures o permitas en Android.</li>
+            <li>Mostrar anuncios y administrar las funciones Premium y suscripciones.</li>
+            <li>Proteger, mantener y solucionar problemas técnicos de la aplicación.</li>
+            <li>Atender solicitudes de soporte, privacidad y eliminación.</li>
+          </ul>
+          <p>FinanzApp no vende tus datos personales. No usamos los registros financieros para tomar decisiones crediticias ni para ofrecer asesoría financiera profesional.</p>
+        </section>
+
+        <section id="terceros">
+          <h2>4. Servicios externos y con quién se comparten</h2>
+          <p>Compartimos información únicamente cuando es necesaria para prestar las funciones que solicitas, cumplir obligaciones legales o proteger el servicio. Los proveedores pueden procesar datos en otros países conforme a sus condiciones y políticas.</p>
+          <ul>
+            <li><strong>Google Firebase:</strong> Firebase Authentication gestiona el inicio de sesión; Cloud Firestore sincroniza datos de la cuenta y estadísticas; Firebase Storage almacena las fotos de perfil. Consulta la <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">información de privacidad de Firebase</a>.</li>
+            <li><strong>Google Gemini API:</strong> recibe la pregunta y el contexto financiero incluidos en la solicitud a FinBot para generar una respuesta. El tratamiento depende de si el proyecto que usa la app está en el nivel gratuito o en un nivel de pago. En el nivel gratuito, Google indica que puede usar las entradas y respuestas para mejorar sus productos y que revisores humanos podrían procesarlas. Por ello, no compartas información financiera confidencial con FinBot. Consulta los <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener noreferrer">términos de Gemini API</a>.</li>
+            <li><strong>Google Mobile Ads / AdMob:</strong> puede procesar datos técnicos, identificadores publicitarios e interacciones para seleccionar, entregar, medir y proteger anuncios, según los controles disponibles y tus ajustes de privacidad.</li>
+            <li><strong>Google Play Billing:</strong> procesa compras y suscripciones. La cancelación de una suscripción se gestiona por separado desde Google Play y no ocurre automáticamente al eliminar la cuenta de FinanzApp.</li>
+            <li><strong>Google y Facebook:</strong> si eliges uno de estos proveedores para iniciar sesión o vincular una cuenta, recibimos los datos básicos de perfil que autorices para autenticarte y mostrar tu perfil.</li>
+          </ul>
+          <div class="callout"><strong>Importante sobre FinBot:</strong> FinanzApp envía datos financieros resumidos junto con tu mensaje para generar una respuesta. Si el uso de Gemini de FinanzApp está bajo el nivel gratuito, Google puede utilizar el contenido enviado para mejorar sus servicios y permitir revisión humana de calidad. Evita introducir datos que identifiquen cuentas bancarias, tarjetas, contraseñas u otra información sensible.</div>
+          <p>Los proveedores pueden tratar datos como encargados o bajo sus propias condiciones para prestar sus servicios. FinanzApp no controla sus prácticas independientes; revisa sus políticas antes de usar esas funciones.</p>
+        </section>
+
+        <section id="seguridad">
+          <h2>5. Seguridad</h2>
+          <p>FinanzApp utiliza conexiones seguras HTTPS para comunicarse con los servicios en la nube y aplica las medidas de seguridad disponibles en Firebase y en los proveedores integrados. Los datos financieros locales se almacenan en el dispositivo; protege el acceso al dispositivo con bloqueo de pantalla y evita compartirlo con otras personas.</p>
+          <p>Ningún método de transmisión o almacenamiento electrónico puede garantizar seguridad absoluta. Mantén protegidas tus credenciales de Google o Facebook y no compartas códigos de acceso.</p>
+        </section>
+
+        <section id="retencion">
+          <h2>6. Conservación de la información</h2>
+          <p>Los datos locales permanecen en el dispositivo hasta que los elimines desde la app, borres sus datos o desinstales FinanzApp. Los datos sincronizados se conservan mientras la cuenta esté activa o sean necesarios para prestar el servicio. Los proveedores externos pueden conservar registros técnicos o transaccionales conforme a sus políticas y obligaciones legales.</p>
+          <p>Si una solicitud de eliminación requiere revisión de identidad o soporte, la procesaremos en un plazo razonable y procuraremos completarla dentro de los 30 días calendario siguientes a su verificación. Si alguna información debe conservarse por una obligación legal o para prevenir fraude, se limitará a ese propósito y durante el tiempo exigido.</p>
+        </section>
+
+        <section id="eliminacion">
+          <h2>7. Cómo eliminar tu cuenta y tus datos</h2>
+          <h3>Desde FinanzApp</h3>
+          <p>Abre <strong>Perfil → Configuración de Cuenta → Eliminar cuenta y datos</strong> y confirma la solicitud. La eliminación borra la cuenta de FinanzApp, los datos financieros asociados sincronizados, la foto de perfil almacenada por FinanzApp y los datos locales del dispositivo.</p>
+          <h3>Si ya no puedes abrir la aplicación</h3>
+          <p>Envía una solicitud desde el correo asociado a tu cuenta a <a href="mailto:FinanzApp027@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20FinanzApp">FinanzApp027@gmail.com</a> con el asunto “Solicitud de eliminación de cuenta FinanzApp”. Incluye el correo o método de inicio de sesión de la cuenta. No envíes contraseñas ni números de tarjetas. Podemos pedir información razonable para verificar que la solicitud proviene del titular.</p>
+          <p>La eliminación de la cuenta no cancela automáticamente una suscripción de Google Play. Cancélala desde la sección de suscripciones de tu cuenta de Google Play. Las copias de seguridad o registros que Google, Facebook, Google Play o Gemini deban conservar se rigen por las políticas de esos proveedores.</p>
+        </section>
+
+        <section id="derechos">
+          <h2>8. Tus derechos y solicitudes</h2>
+          <p>Puedes solicitar información sobre tus datos, pedir su corrección o eliminación, retirar permisos que otorgaste a proveedores y consultar cómo se usa tu información escribiendo a <a href="mailto:FinanzApp027@gmail.com">FinanzApp027@gmail.com</a>. La retirada de un permiso puede impedir el uso de la función relacionada. Atenderemos las solicitudes de acuerdo con la normativa aplicable, incluida la legislación colombiana de protección de datos personales.</p>
+        </section>
+
+        <section id="menores">
+          <h2>9. Privacidad de menores</h2>
+          <p>FinanzApp no está dirigida a menores de 18 años ni busca recopilar intencionalmente sus datos. Si crees que un menor nos proporcionó información personal, contacta al correo indicado para solicitar su revisión y eliminación.</p>
+        </section>
+
+        <section id="cambios">
+          <h2>10. Cambios en esta política y contacto</h2>
+          <p>Podemos actualizar esta política para reflejar cambios en FinanzApp, sus proveedores o los requisitos legales. Publicaremos la versión vigente en esta misma página e indicaremos la fecha de actualización.</p>
+          <div class="contact-card">
+            <p><strong>Responsable:</strong> Alejandro Andrés Sánchez Carrillo</p>
+            <p><strong>País:</strong> Colombia</p>
+            <p><strong>Aplicación:</strong> FinanzApp</p>
+            <p><strong>Privacidad y soporte:</strong> <a href="mailto:FinanzApp027@gmail.com">FinanzApp027@gmail.com</a></p>
+          </div>
+          <p class="small">Última actualización: 27 de octubre de 2026.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer>© 2026 FinanzApp · Política de Privacidad</footer>
+</body>
+</html>
